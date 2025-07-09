@@ -86,4 +86,30 @@ span{
     border-bottom: 3px solid var(--fourth-color);
 }
 
+.navBtn{
+    color: var(--main-color);
+    background: transparent;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border: 2px solid var(--fourth-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: all 0.5s ease;
+}
+
+.navBtn:hover{
+    background: var(--fourth-color);
+    color: var(--text-color);
+    font-size: large;
+    box-shadow: 0 0 10px var(--fourth-color);
+}
+
+#menuIcon{
+    display: none;
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 
