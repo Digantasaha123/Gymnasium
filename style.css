@@ -117,8 +117,8 @@ span{
 .heading{
     text-align: center;
     font-size: 6.5rem;
-    /* font-weight: 800;
-    margin-bottom: 2rem; */
+    /* font-weight: 800; */
+    margin-bottom: 2rem;
 }
 .services{
     background: var(--snd-bg-color);
