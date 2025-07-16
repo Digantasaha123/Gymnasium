@@ -31,7 +31,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 8% 2rem;
+    padding: 10rem 8% 0;
 }
 
 /* header */
@@ -112,57 +112,8 @@ span{
     cursor: pointer;
 }
 
-/* Services Section css Code start here */
-
-.heading{
-    text-align: center;
-    font-size: 6.5rem;
-    /* font-weight: 800; */
-    margin-bottom: 2rem;
-}
-.services{
-    background: var(--snd-bg-color);
-    
-}
-.services-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
-    gap: 2.3rem;
-    margin-top: 4.1rem;
-
-}
 
 
-.row{
-    background: var(--bg-color) ;
-    border-radius: 26px;
-    border: 1px solid transparent;
-    box-shadow: 0 0 5px var(--main-color);
-    padding: 20px;
-    transition: all 0.5s ease;
-    
-}
-.row img{
-    width: 100%;
-    /* height: auto;
-    max-height: 200px; */
-    height: 200px;
-    border-radius: 27px;
-    margin-bottom: 1.4rem;
-    /* object-fit: cover; */
-}   
 
-.row h4{
-    font-size: 25px;
-    font-weight:700 ;
-    margin-bottom:10px;
-    line-height: 1.4;
-}
 
-.row:hover{
-    border: 1px solid var(--main-color);
-    transform: translateY(-5px) scale(1.04);
-    cursor: pointer;
-
-}   
+ 
