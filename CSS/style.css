@@ -289,7 +289,7 @@ span{
     align-items: center;
     margin: 0 auto;
 }
-
+    
 .btn:hover {
     background: var(--fourth-color);
     color: #222;
