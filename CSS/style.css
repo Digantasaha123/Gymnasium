@@ -340,7 +340,7 @@ span{
     align-items: center;
     margin: auto;
 }
-
+    
 .btn:hover {
     background: var(--fourth-color);
     /* background: white; */
