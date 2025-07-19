@@ -112,8 +112,232 @@ span{
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+
+/* home */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section h3{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.home-section span{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home-section h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img{
+    width: 350px;
+}
+
+.home-img::before{
+    content: 'STRENGTH';
+    position: absolute;
+    transform: translateX(-42%);
+    font-size: 15rem;
+    font-weight: 400;
+    top: 5%;
+    left: 30%;
+    line-height: 20rem;
+    color: var(--text-color);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.home-section p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--snd-bg-color);
+    border-radius: 1rem;
+    color: var(--fourth-color);
+    box-shadow: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition:0.5s ease;
+}
+
+.btn:hover{
+    background: var(--fourth-color);
+    color: black;
+}
+
+/* Services Section css Code start here */
+
+.heading{
+    text-align: center;
+    font-size: 6.5rem;
+    /* font-weight: 800; */
+    margin-bottom: 2rem;
+}
+.services{
+    background: var(--snd-bg-color);
+    
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.1rem;
+
+}
+>>>>>>> main
 
 
 
 
+<<<<<<< HEAD
  
+=======
+.row:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.04);
+    cursor: pointer;
+
+}   
+/* About */
+
+ .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.about-content {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    box-shadow: 0 0 8px rgba(182,245,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-content .heading {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.about-intro {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.about-feature {
+    background: rgba(182,245,0,0.07);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.about-feature i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.about-feature h4 {
+    font-size: 1rem;
+    color: var(--main-color);
+    margin: 0;
+}
+
+.about-feature p {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.btn {
+    color: var(--text-color);
+    background: transparent;
+    padding: 1rem 1rem;
+    min-width: 180px;
+    max-width: 200px;
+    border: 2px solid var(--fourth-color);
+    font-size: 12px ;
+    font-weight: 600;
+    border-radius: 1rem;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn:hover {
+    background: var(--fourth-color);
+    /* background: white; */
+    color: #222;
+    box-shadow: 0 0 10px var(--fourth-color);
+    transition: all 0.5s ease-in-out;
+    font-size: small;
+}
+
+@media (max-width: 700px) {
+    .about-content {
+        max-width: 95vw;
+        padding: 1rem;
+    }
+    .about-img {
+        width: 100px;
+        height: 100px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+>>>>>>> main
