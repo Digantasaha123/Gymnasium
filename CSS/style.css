@@ -213,6 +213,7 @@ span{
     border: 1px solid transparent;
     /* box-shadow: 0 0 5px var(--main-color); */
     box-shadow: 0 0 15px rgba(122, 69, 255, 0.15);
+    box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
     transition: all 0.5s ease;
     
