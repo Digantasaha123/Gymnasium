@@ -88,7 +88,7 @@ span{
 }
 
 .navBtn{
-    color: var(--main-color);
+    color: white;
     background: transparent;
     display: inline-block;
     padding: 1rem 2.8rem;
