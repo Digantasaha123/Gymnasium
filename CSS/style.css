@@ -364,3 +364,113 @@ span{
         grid-template-columns: 1fr;
     }
 }
+
+/* pricing section */
+
+.plans {
+  background-color: var(--snd-bg-color);
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.box {
+  background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  box-shadow: 0 10px 20px rgba(122, 69, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(122, 69, 255, 0.25);
+  border: 1px solid var(--main-color);
+}
+
+.box .badge {
+  position: absolute;
+  top: -12px;
+  right: -40px;
+  background: var(--third-color);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.box h3 {
+  font-size: 2.8rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.box h2 span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--fourth-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.box ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.box ul li {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box ul li i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.box a {
+    
+  display: inline-block;
+  margin-top: auto;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fourth-color);
+  background-color: var(--snd-bg-color);
+  border-radius: 1rem;
+  border-bottom:2px solid #5d6c83;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.box a i {
+  margin-left: 8px;
+  vertical-align: middle;
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.box a:hover {
+  background: var(--third-color);
+  color: #fff;
+  box-shadow: 0 0 12px var(--third-color);
+}
