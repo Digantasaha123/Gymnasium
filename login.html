@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
+  <title>Login Your Profile</title>
 </head>
 <body>
-    <form action=""></form>
+   <div id="loginModal" class="modal">
+  <div class="form">
+    <form method="post" action="login.php">
+      <div class="form">
+        <legend>Log in</legend>
+    
+        <label class="inputTitle" for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <span id="nameE" class="error"></span>
+        <br /><br />
+    
+        <label class="inputTitle" for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <span id="emailE" class="error"></span>
+        <br /><br />
+    
+        <label class="inputTitle" for="country">Country</label>
+        <input type="text" id="country" name="country" />
+        <span id="countryE" class="error"></span>
+        <br /><br />
+    
+        <label class="inputTitle" for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <span id="passwordE" class="error"></span>
+        <br /><br />
+    
+        <label class="inputTitle" for="confirmpassword">Confirm Password</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" />
+        <span id="confirmE" class="error"></span>
+        <br /><br />
+    
+        <input type="submit" value="Log in" />
+      </div>
+    </form>
+    
+  </div>
+</div>
+
+  <script src="script.js"></script>
 </body>
 </html>
