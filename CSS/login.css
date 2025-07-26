@@ -147,3 +147,11 @@ form{
 .togglePanel p{
     margin-bottom: 20px;
 }
+
+.togglePanel .btn{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: none;
+}
