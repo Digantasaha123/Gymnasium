@@ -26,6 +26,7 @@ body{
 }
 
 .formBox{
+    padding: 40px;
     position: absolute;
     right: 0;
     width: 50%;
@@ -52,7 +53,7 @@ form{
 }
 
 .inputBox input{
-    width: 96%;
+    width: 100%;
     padding: 13px 50px 13px 20px;
     font-size: 16px;
     font-weight: 500;
@@ -105,6 +106,17 @@ form{
 
 .container p{
     margin: 20px 0;
-    font-size: 14px;
+    font-size: medium;
     color: whitesmoke;
+}
+
+.SocialIcons a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    color: blue;
+    text-decoration: none;
+    margin: 0 8px;
 }
