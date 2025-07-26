@@ -31,11 +31,12 @@ body{
     right: 0;
     width: 50%;
     height: 100%;
-    background: blueviolet;
+    background: #fff;
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     text-align: center;
+    z-index: 1;
 }
 
 form{
@@ -91,7 +92,7 @@ form{
 }
 
 .btn{
-    width: 50%;
+    width: 100%;
   height: 48px;
     background: rgba(0, 0, 139, 0.63);
     color: white;
@@ -107,7 +108,7 @@ form{
 .container p{
     margin: 20px 0;
     font-size: medium;
-    color: whitesmoke;
+    color: black;
 }
 
 .SocialIcons a{
@@ -119,4 +120,30 @@ form{
     color: blue;
     text-decoration: none;
     margin: 0 8px;
+}
+
+.formBox.Register{
+   visibility: hidden;
+}
+
+.toggleBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.togglePanel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: slateblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.togglePanel p{
+    margin-bottom: 20px;
 }
