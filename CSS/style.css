@@ -221,7 +221,7 @@ span{
     height: 200px;
     border-radius: 27px;
     margin-bottom: 1.4rem;
-    /* object-fit: cover; */
+    object-fit: cover;
 }   
 
 .row h4{
