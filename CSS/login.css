@@ -23,6 +23,7 @@ body{
     background: #fff;
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    /* overflow: hidden; */
 }
 
 .formBox{
@@ -36,7 +37,7 @@ body{
     align-items: center;
     color: black;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 form{
@@ -130,18 +131,32 @@ form{
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.toggleBox::before {
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background: blueviolet;
+    border-radius: 150px;
+    z-index: 2;
 }
 
 .togglePanel{
     position: absolute;
     width: 50%;
     height: 100%;
-    background: slateblue;
+    background: blueviolet;
+    border-radius: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    z-index: 2;
 }
 
 .togglePanel p{
