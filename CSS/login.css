@@ -159,6 +159,10 @@ form{
     z-index: 2;
 }
 
+.togglePanel .toggleRight{
+    right: -50%;
+}
+
 .togglePanel p{
     margin-bottom: 20px;
 }
