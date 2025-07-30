@@ -29,7 +29,10 @@
       return;
     }
 
-   
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+      return;
+    }
 
     alert("Registration successful!");
     // registerForm.submit(); // Enable this if connecting to a backend
