@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient( 90deg, #e2e2e2, #c9d6ff);
+    background: #000000cd;
 }
 
 .container{
@@ -23,10 +23,14 @@ body{
     margin: 20px;
     background: #fff;
     border-radius: 30px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px 5px 15px orangered;
+;
     overflow: hidden;
 }
 
+h1{
+   color: blueviolet;
+}
 .formBox{
     padding: 40px;
     position: absolute;
@@ -101,7 +105,7 @@ form{
 .btn{
     width: 100%;
     height: 48px;
-    background: rgba(0, 0, 139, 0.63);
+    background: rgb(255, 111, 0);
     color: white;
     border: none;
     border-radius: 8px;
@@ -131,7 +135,7 @@ form{
     border: 2px solid #ccc;
     border-radius: 8px;
     font-size: 24px;
-    color: blue;
+    color: blueviolet;
     text-decoration: none;
     margin: 0 8px;
 }
@@ -157,8 +161,8 @@ form{
     left: -250%;
     width: 300%;
     height: 100%;
-    border: 2px solid blueviolet;
-    background: orangered;
+    border: 2px solid orangered;
+    background: #B6F500;
     border-radius: 150px;
     z-index: 2;
     transition: 1.2s ease-in-out;
@@ -172,7 +176,7 @@ form{
     position: absolute;
     width: 50%;
     height: 100%;
-    background: orangered;
+    background: #B6F500;
     border-radius: 150px;
     display: flex;
     flex-direction: column;
@@ -218,12 +222,18 @@ form{
     width: 200px;
     font-size: 20px;
     margin: -10px 0;
+    background: rgb(255, 111, 0);
+    margin-top: 4px;
+    color: white;
 }
 .toggleBox .togglePanel .LoginBtn{
     height: 50px;
     width: 200px;
     font-size: 20px;
     margin: -10px 0;
+    background: rgb(255, 111, 0);
+    color: white;
+     margin-top: 4px;
 }
 
 @media screen and (max-width: 650px) {
