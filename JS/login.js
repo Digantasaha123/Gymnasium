@@ -24,13 +24,12 @@
       return;
     }
 
-  
-
-    // Check password length
-    if (password.length < 6) {
-      alert("Password must be at least 6 characters long.");
+    if (!email.includes('@') || !email.includes('.')) {
+      alert("Please enter a valid email address.");
       return;
     }
+
+   
 
     alert("Registration successful!");
     // registerForm.submit(); // Enable this if connecting to a backend
