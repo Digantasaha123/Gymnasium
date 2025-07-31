@@ -8,18 +8,18 @@
  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="container">
+  <div class="container active">
 
           <!-- Login -->
     <div class="formBox login">
       <form action="">
         <h1>Login</h1>
         <div class="inputBox">
-          <input type="text" placeholder="Username" required>
+          <input type="text" id="loginUsername" placeholder="Username" required>
           <i class='bx bx-user' ></i>
         </div>
         <div class="inputBox">
-          <input type="password" placeholder="Password" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
           <i class='bx bx-lock-alt' ></i>
         </div>
         <div class="forgotLink">
@@ -42,15 +42,15 @@
       <form action="">
         <h1>Registration</h1>
         <div class="inputBox">
-          <input type="text" placeholder="Username" required>
+          <input type="text" id="registerUsername" placeholder="Username" required>
           <i class='bx bx-user' ></i>
         </div>
          <div class="inputBox">
-          <input type="Email" placeholder="Email" required>
+          <input type="Email" id="registerEmail" placeholder="Email" required>
           <i class='bx bx-envelope'></i>
         </div>
         <div class="inputBox">
-          <input type="password" placeholder="Password" required>
+          <input type="password" id="registerPassword" placeholder="Password" required>
           <i class='bx bx-lock-alt' ></i>
         </div>
           <button type="submit" class="btn">Register</button>
@@ -70,13 +70,15 @@
         <p>Don't have an account?</p>
         <button class="btn registerBtn">Register</button>
       </div>
-      
+
       <div class="togglePanel toggleRight">
-        <h1>Hello, Welcome!</h1>
-        <p>Don't have an account?</p>
-        <button class="btn registerBtn">Register</button>
+        <h1>Welcome Back!</h1>
+        <p>Already have an account?</p>
+        <button class="btn LoginBtn">Login</button>
       </div>
     </div>
   </div>
+
+  <script src="JS/login.js"></script>
 </body>
 </html>
