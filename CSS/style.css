@@ -415,7 +415,9 @@ span{
     transition: all 0.5s ease-in-out;
     font-size: small;
 }
-/* ===== Review Section ===== */
+
+
+/*  Review Section  */
 .review {
   padding: 80px 20px;
   background: #111;
@@ -424,16 +426,16 @@ span{
 }
 
 .reviewBox .heading {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin-bottom: 40px;
   color: #fff;
 }
 
 .reviewBox .heading span {
-  color: #f76c2f; /* orange highlight */
+  color: blueviolet;
 }
 
-/* Review Cards Wrapper */
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -441,7 +443,7 @@ span{
   flex-wrap: wrap;
 }
 
-/* Individual Review Card */
+
 .reviewItem {
   background: #1c1c1c;
   border-radius: 15px;
@@ -453,33 +455,32 @@ span{
 
 .reviewItem:hover {
   transform: translateY(-10px);
-  box-shadow: 10px 10px 25px rgba(255, 102, 0, 0.4);
+  box-shadow: 10px 10px 25px blueviolet;
 }
 
-/* Profile Image */
+
 .reviewItem img {
   width: 80px;
   height: 80px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #f76c2f;
+  border: 3px solid blueviolet;
 }
 
-/* Name */
 .reviewItem h2 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin: 10px 0;
   color: #f1f1f1;
 }
 
-/* Star Rating */
+
 .rating i {
-  color: #f76c2f;
+  color: blueviolet;
   font-size: 20px;
 }
 
-/* Text */
+
 .reviewItem p {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -487,7 +488,9 @@ span{
   color: #ccc;
 }
 
-/* Responsive */
+
+
+/* Responsive Review section*/
 @media screen and (max-width: 768px) {
   .wrapper {
     flex-direction: column;
