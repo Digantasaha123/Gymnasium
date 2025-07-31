@@ -113,6 +113,72 @@ span{
     cursor: pointer;
 }
 
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box centered on screen */
+.modal-content {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+/* Modal heading */
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: blueviolet;
+  font-size: 24px;
+}
+
+/* Buttons inside modal */
+.modal-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-btn.student {
+  background-color: #B6F500;
+  color: blue;
+}
+
+.modal-btn.admin {
+  background-color: orangered;
+  color: white;
+}
+
+.modal-btn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.close-btn {
+  background: transparent;
+  border: 2px solid #ccc;
+  color: #333;
+}
 
 /* home */
 

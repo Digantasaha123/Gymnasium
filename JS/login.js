@@ -35,7 +35,6 @@
     }
 
     alert("Registration successful!");
-    // registerForm.submit(); // Enable this if connecting to a backend
   });
 
   // Login form
@@ -58,5 +57,5 @@
     }
 
     alert("Login successful!");
-    // loginForm.submit();
+  
   });
