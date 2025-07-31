@@ -1215,4 +1215,19 @@ span{
     }
     
 }
-
+@media (max-width: 617px) {
+   
+    .home-img img{
+        width: 80vw;
+        margin-top: 8 rem;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 450px) {
+   html{
+    font-size: 50%;
+   }
+}
