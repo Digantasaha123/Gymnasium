@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000cd;
+}
+
+.container{
+    position: relative;
+    width: 850px;
+    height: 592px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: -5px 5px 15px rgb(20, 173, 220);
+    overflow: hidden;
+}
+
+h1{
+   color: rgb(13, 122, 165);
+}
+.formBox{
+    padding: 40px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    color: rgb(242, 239, 239);
+    text-align: center;
+    z-index: 1;
+    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
+}
+
+.container.active .formBox{
+    right: 50%;
+}
+
+form{
+    width: 100%;
+}
+
+.container h1{
+    font-size: 36px;
+    margin: -10px 0;
+}
+
+.inputBox{
+    position: relative;
+    margin: 30px 0;
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: #eee;
+        
+    
+}
+
+.inputBox input::placeholder,
+.inputBox select:invalid {
+    color: #03056f;
+    font-weight: 400;
+}
+
+.inputBox select option {
+    color: #03056f;
+    background: white;
+    padding: 10px;
+}
+
+.inputBox i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgb(43, 86, 226);
+}
+
+.forgotLink{
+    margin: -15px 0 15px;
+    font-size: 14px;
+}
+
+.forgotLink a{
+    color: blue;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.btn{
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(145deg, #2c3e50, #3498db);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(52, 152, 219, 0.2);
+    transition: all 0.3s ease;
+
+}
+
+.container p{
+    margin: 20px 0;
+    font-size: medium;
+    color: black;
+}
+
+.SocialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.SocialIcons a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    color: rgb(20, 16, 102);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.formBox.Register{
+   visibility: hidden;
+}
+
+.container.active .formBox.Register{
+    visibility: visible;
+   
+}   
+
+.toggleBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.toggleBox::before {
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    border: 2px solid #2c3e50;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border-radius: 100px;
+    z-index: 2;
+    transition: 1.2s ease-in-out;
+}
+
+.container.active .toggleBox::before {
+    left: 50%;
+}
+
+.togglePanel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border-radius: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+    transition: 1.2s ease-in-out;
+}
+
+.togglePanel.toggleLeft{
+    left: 0;
+    transition-delay: .6s;
+}
+
+.container.active .togglePanel.toggleLeft{
+    left: 50%;
+    transition-delay: 0s;
+}
+
+.togglePanel.toggleRight{
+    right: -50%;
+}
+
+.container.active .togglePanel.toggleRight{
+    right: 0;
+    transition-delay: 0s;
+}
+
+.togglePanel p{
+    margin-bottom: 20px;
+    color: #91b0bc;
+}
+
+.togglePanel.btn{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.toggleBox .togglePanel .registerBtn{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin: -10px 0;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    margin-top: 4px;
+    color: white;
+    transition: all 0.6s ease-in-out;
+}
+.toggleBox .togglePanel .LoginBtn{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    margin: -10px 0;
+    background: linear-gradient(145deg, #2980b9, #3498db);
+    color: white;
+    margin-top: 4px;
+    transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        width: 90%;
+        height: calc(100vh - 40px);
+    }
+
+    .formBox{
+        bottom: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .container.active .formBox{
+        right: 0;
+        bottom: 30%;
+    }   
+
+    .toggleBox::before {
+        left: 0;
+        top: -270px;
+        width: 100%;
+        height: 70%;
+        border-radius: 20vw;
+    }
+
+    .container.active .toggleBox::before{
+        left: 0;
+        top: 70%;
+    }
+
+    .container.active .togglePanel.toggleLeft{
+        left: 0;
+        top: -30%;
+    }
+
+    .togglePanel{
+        width: 100%;
+        height: 50%;
+    }
+
+    .togglePanel.toggleLeft{
+        top: 0;
+    }
+    .togglePanel.toggleRight{
+        right: 0;
+        bottom: -30%;
+    }
+
+    .container.active .togglePanel.toggleRight{
+        bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .formBox{
+        padding: 20px;
+    }
+
+    .togglePanel h1{
+        font-size: 28px;
+    }
+}

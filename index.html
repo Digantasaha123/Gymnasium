@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Gymnasium</title>
@@ -28,27 +29,38 @@
         </ul>
 
         <div class="top-btn">
-            <a href="#" class="navBtn">Join Us</a>
+            <a href="login.html" class="navBtn">Join Us</a>
         </div>
+
+    <!-- Join Us Modal -->
+<div class="modal" id="joinModal">
+  <div class="modal-content">
+    <h2>Login As</h2>
+    <button onclick="window.location.href='login.html'" class="modal-btn student">Student</button>
+    <button onclick="window.location.href='admin-login.html'" class="modal-btn admin">Admin</button>
+    <button onclick="closeModal()" class="close-btn">Cancel</button>
+  </div>
+</div>
+
     </header>
     
 <!-- Home -->
      
      <section class="home" id="home">
 
-         <div class="home-img">
+         <div class="home-img" data-aos="zoom-in">
                 <img src="Assets/images/homeLogo.jpg" alt="">
             </div>
 
-        <div class="home-section">
+        <div class="home-section" data-aos="zoom-in">
 
             <h3>Define Your</h3>
             <h1>Signature Physique by</h1>
-            <h3><span class="multiple-text">Bodybuilding</span></h3>
+            <h3><span class="multiple-text"></span></h3>
 
             <p>"Discipline shapes destiny. Push harder today, embrace the journey, and <br> build a physique that inspires both mind and body."</p>
 
-            <a href="#" class="btn">Join Us</a>
+            <button class="btn">Read More</button>
 
         </div>
 
@@ -57,8 +69,8 @@
 
     <!-- ------------------------------Service Section Started------------------------- -->
     <section class="services" id="service">
-        <h2 class="heading">Our<span>Services</span></h2>
-        <div class="services-content">
+        <h2 class="heading" data-aos="zoom-in-down">Our<span>Services</span></h2>
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="assets/images/pp1 (1).jpg" alt="">
                 <h4>Physical Fitness</h4>
@@ -93,13 +105,12 @@
     </section>
 
 
-
-      <!-- Abbout  -->
-    <section class="about" id="about">
+      <!-- About  -->
+    <section class="about" id="about" data-aos="zoom-in-down">
       <div class="about-img">
         <img src="assets/images/about.jpg" alt="Gymnasium" />
       </div>
-      <div class="about-content">
+      <div class="about-content" data-aos="zoom-in-up">
         <h2 class="heading">Why Choose Us?</h2>
         <h3 class="about-subtitle">Empowering Your Fitness Journey</h3>
         <p class="about-intro">At <span>Gymnasium</span>, we blend expertise, technology, and community to help you reach your goals faster and smarter.</p>
@@ -133,6 +144,57 @@
       </div>
     </section>
 
+
+
+    <!-- Review Section -->
+
+    <section class="review" id="review">
+      <div class="reviewBox" data-aos="zoom-in-down">
+        <h2 class="heading">What Our <span>Members Say</span></h2>
+
+        <div class="wrapper" data-aos="zoom-in-up">
+          <div class="reviewItem">
+            <img src="assets/images/r1 (1).jpg" alt="">
+            <h2>Rohit Chauhan</h2>
+            <div class="rating">
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+            </div>
+            <p>"Gymnasium has transformed my life. The trainers are incredibly supportive, and the community is like family. I've never felt stronger!"</p>
+          </div>
+
+          <div class="reviewItem">
+            <img src="assets/images/r1 (3).jpg" alt="">
+            <h2>Nishika Mehta</h2>
+            <div class="rating">
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+               
+            </div>
+            <p>
+"Joining Gymnasium was the best decision of my life. The trainers are knowledgeable, and the atmosphere is motivating. I've achieved my fitness goals!"
+            </p>
+          </div>
+
+          <div class="reviewItem">
+            <img src="assets/images/r1 (2).jpg" alt="">
+            <h2>Mohit Chauhan</h2>
+            <div class="rating">
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+              <i class='bx  bx-star'  ></i> 
+            </div>
+            <p>
+"Gymnasium is more than just a gym; it's a community. The trainers are always there to help, and the equipment is top-notch. I've never felt better!"
+            </p>
+          </div>
     <!-- Pricing -->
     <section class="plans" id="plans">
       <h2 class=" heading"> Our <span>Plans</span> </h2>
@@ -168,22 +230,26 @@
           </a>
           
         </div>
-        <div class="box">
-          <h3>PREMIUM</h3>
-          <h2><span>$200/Month</span></h2>
-          <ul>
-             <li><i class='bx bx-dumbbell'></i> All Standard Features</li>
-            <li><i class='bx bx-time-five'></i> 24/7 Gym Access</li>
-            <li><i class='bx bx-calendar-event'></i> Exclusive Workshops</li>
-            
-          </ul>
-
-          <a href="#" class="btn">Join Now
-            <i class='bx bx-right-arrow-alt'></i>
-          </a>
-
+      </div>
     </section>
-        
-    <script src="script.js"></script>
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+      once: true
+    });
+  </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
+
+<!------footer section--->
+<footer class="footer">
+  <div class="social">
+    <button class="btn">Footer </button>
+
+</footer>
