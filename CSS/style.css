@@ -215,11 +215,11 @@ span{
 .home-img::before{
     content: 'STRENGTH';
     position: absolute;
-    transform: translateX(-42%);
+    transform: translateX(-30%);
     font-size: 15rem;
     font-weight: 400;
-    top: 5%;
-    left: 30%;
+    top: -10%;
+    left: 40%;
     line-height: 20rem;
     color: var(--text-color);
     opacity: 0.1;
