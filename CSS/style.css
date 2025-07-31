@@ -313,8 +313,7 @@ span{
  .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    align-items:self-end;
 }
 
 .about-img {
@@ -333,12 +332,12 @@ span{
 }
 
 .about-content {
-    max-width: 500px;
+    max-width: 100%;
     width: 100%;
     background: rgba(255,255,255,0.04);
     border-radius: 1.2rem;
     padding: 2rem;
-    box-shadow: 0 0 8px rgba(182,245,0,0.08);
+    box-shadow: 0 0 8px rgba(110, 143, 12, 0.08);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -371,7 +370,10 @@ span{
     align-items: flex-start;
     gap: 0.3rem;
 }
-
+.about-feature:hover{
+    transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 2px var(--fourth-color);
+}
 .about-feature i {
     font-size: 1.5rem;
     color: var(--main-color);
@@ -390,7 +392,7 @@ span{
     margin: 0;
 }
 
-.btn {
+.dwn-btn {
     color: var(--text-color);
     background: transparent;
     padding: 1rem 1rem;
@@ -407,12 +409,12 @@ span{
     margin: auto;
 }
     
-.btn:hover {
+.dwn-btn:hover {
     background: var(--fourth-color);
     /* background: white; */
     color: #222;
     box-shadow: 0 0 10px var(--fourth-color);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: small;
 }
 
