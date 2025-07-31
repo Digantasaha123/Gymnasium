@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Form</title>
+  <link rel="stylesheet" href="CSS/admin-login.css">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container active">
+
+          <!-- Login -->
+    <div class="formBox login">
+      <form action="">
+        <h1>Admin Login</h1>
+        <div class="inputBox">
+          <input type="text" id="adminloginUsername" placeholder="Admin Username" required>
+          <i class='bx bx-user' ></i>
+        </div>
+        <div class="inputBox">
+          <input type="password" id="adminloginPassword" placeholder="Admin Password" required>
+          <i class='bx bx-lock-alt' ></i>
+        </div>
+        <div class="forgotLink">
+          <a href="#">Forgot Password?</a>
+           </div>
+          <button type="submit" class="btn" style="background-color: red;">Login</button>
+
+          <p>or login with social platforms</p>
+          <div class="SocialIcons">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-google'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+          </div>
+      </form>
+    </div>
+
+
+          <!-- Register -->
+    <div class="formBox Register">
+      <form action="">
+        <h1>Registration</h1>
+        <div class="inputBox">
+          <input type="text" id="adminRegisterUsername" placeholder="Username" required>
+          <i class='bx bx-user' ></i>
+        </div>
+
+        <div class="inputBox">
+          <input type="Email" id="AdminRegisterEmail" placeholder="Email" required>
+          <i class='bx bx-envelope'></i>
+        </div>
+
+        <div class="inputBox">
+          <select id="adminRole" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="trainer">Trainer</option>
+            <option value="stakeholder">Stakeholder</option>
+            <option value="cleaner">Cleaner</option>
+            <option value="spotter">Spotter</option>
+            <option value="senior-trainer">Senior Trainer</option>
+            <option value="co-trainer">Co-Trainer</option>
+          </select>
+          <i class='bx bx-user-pin'></i>
+        </div>
+
+        <div class="inputBox">
+          <input type="password" id="adminRegisterPassword" placeholder="Password" required>
+          <i class='bx bx-lock-alt' ></i>
+        </div>
+
+          <button type="submit" class="btn">Register</button>
+
+          <p>or register with social platforms</p>
+          <div class="SocialIcons">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-google'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+          </div>
+      </form>
+    </div>
+
+    <div class="toggleBox">
+      <div class="togglePanel toggleLeft">
+        <h1>Hello, Welcome!</h1>
+        <p>Don't have an account?</p>
+        <button class="btn registerBtn">Register</button>
+      </div>
+
+      <div class="togglePanel toggleRight">
+        <h1>Welcome Back!</h1>
+        <p>Already have an account?</p>
+        <button class="btn LoginBtn">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/login.js"></script>
+</body>
+</html>
