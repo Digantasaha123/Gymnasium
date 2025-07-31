@@ -1,4 +1,6 @@
 
+
+// modal section
   const joinBtn = document.querySelector('.navBtn');
   const modal = document.getElementById('joinModal');
 
@@ -11,7 +13,6 @@
     modal.style.display = 'none';
   }
 
-  // Optional: Close modal if user clicks outside modal box
   window.addEventListener('click', function(e) {
     if (e.target === modal) {
       closeModal();
