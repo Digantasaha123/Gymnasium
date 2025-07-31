@@ -1,4 +1,17 @@
 
+let menu = document.querySelector('#menuIcon');
+let navbar = document.querySelector('.nav');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+  menu.classList.remove('bx-x');    
+    navbar.classList.remove('active');
+}
+
 
 // modal section
   const joinBtn = document.querySelector('.navBtn');
@@ -18,4 +31,6 @@
       closeModal();
     }
   });
+
+
 
