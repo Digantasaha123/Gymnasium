@@ -129,10 +129,10 @@ span{
 
 /* Modal box centered on screen */
 .modal-content {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.937);
   padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 15px 15px 30px rgba(220, 20, 60, 0.747);
   text-align: center;
   min-width: 300px;
   max-width: 90%;
@@ -166,7 +166,7 @@ span{
 
 .modal-btn.admin {
   background-color: orangered;
-  color: white;
+  color: bisque;
 }
 
 .modal-btn:hover {
