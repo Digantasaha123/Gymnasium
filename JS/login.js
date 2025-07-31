@@ -19,6 +19,7 @@ registerForm.addEventListener('submit', function (e) {
   const username = document.getElementById('registerUsername').value.trim();
   const email = document.getElementById('registerEmail').value.trim();
   const password = document.getElementById('registerPassword').value.trim();
+  const confirmPassword = document.getElementById('confirmPassword').value.trim();
 
   if (username.length < 4 || /\d/.test(username)) {
     alert("Username must be at least 4 letters and contain no numbers.");
@@ -32,6 +33,11 @@ registerForm.addEventListener('submit', function (e) {
 
   if (password.length < 6) {
     alert("Password must be at least 6 characters long.");
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
     return;
   }
 
