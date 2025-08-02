@@ -1255,3 +1255,19 @@ span{
     font-size: 50%;
    }
 }
+
+
+/* Review Section Code */
+
+.review {
+    background: var(--bg-color);
+}
+
+.review-box {
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+
