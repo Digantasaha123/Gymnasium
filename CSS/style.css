@@ -1138,7 +1138,7 @@ span{
        flex-direction: column;
         background: var(--bg-color);
        transition: all 0.5s ease-in-out;
-       /* align-items: flex-start; */
+       align-items: flex-start;
    }
    .navbar a{
     display: block;
