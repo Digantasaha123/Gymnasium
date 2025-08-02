@@ -1264,10 +1264,60 @@ span{
 }
 
 .review-box {
-   background-size: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
+  .review .heading {
+     margin-bottom: 5rem;
+  }
+
+  .review-box img {
+     width: 15rem;
+     border-radius: 50%;
+     border: 3px solid var(--main-color);
+  }
+
+  .wrapper {
+     display: grid;
+     grid-template-columns: repeat(3,1fr)
+     gap: 3rem;
+  }
+
+  .review-item {
+     min-height: 450px;
+     min-width: 350px;
+     background: var(--snd-bg-color);
+     border: 3px solid rgba(238, 238, 238, 0.3);
+     border-radius: 2rem;
+     margin: 0 2rem;
+     padding: 30px 60px;
+     cursor: pointer;
+     display: flex;
+     flex direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1.5rem;
+     color: #000;
+     transition: 0.5s ease-in-out;      
+  }
+
+  .review-item:hover {
+     border: 3px solid var(--main-color);
+     transform: translate(-5px) scale(1.05);
+  }
+
+  .review-item h2 {
+     front size: 2.8rem;
+  }
+  .review-item p {
+     font-size: 1.5rem;
+     line-height: 1.6;
+  }
+  .review-item .rating {
+     display: flex;
+     line-height: 1.3;
+  }
