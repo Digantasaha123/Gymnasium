@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     list-style: none;
     outline: none;
-    /* 1rem = 16px */
+    
 }
 
 :root{
@@ -118,7 +118,7 @@ span{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 00vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.699);
   display: none;
@@ -134,7 +134,7 @@ span{
   border-radius: 12px;
   box-shadow: 15px 15px 30px rgba(220, 20, 60, 0.747);
   text-align: center;
-  min-width: 300px;
+  min-width: 600px;
   max-width: 90%;
 }
 
@@ -165,7 +165,7 @@ span{
 }
 
 .modal-btn.admin {
-  background-color: orangered;
+  background-color: rgb(59, 27, 133);
   color: bisque;
 }
 
@@ -175,9 +175,21 @@ span{
 }
 
 .close-btn {
-  background: transparent;
-  border: 2px solid #ccc;
-  color: #333;
+  background: #b8f500b0;
+  color: white;
+  border: 2px solid var(--fourth-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.close-btn:hover {
+  background: var(--fourth-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--fourth-color);
 }
 
 /* home */
@@ -290,7 +302,7 @@ span{
     height: 200px;
     border-radius: 27px;
     margin-bottom: 1.4rem;
-    /* object-fit: cover; */
+    object-fit: cover;
 }   
 
 .row h4{
@@ -619,7 +631,7 @@ span{
 
 /* Modal box centered on screen */
 .modal-content {
-  background: rgba(255, 255, 255, 0.937);
+  background: rgba(122, 116, 116, 0.506);
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 15px 15px 30px rgba(220, 20, 60, 0.747);
@@ -631,7 +643,7 @@ span{
 /* Modal heading */
 .modal-content h2 {
   margin-bottom: 20px;
-  color: blueviolet;
+  color: whitesmoke;
   font-size: 24px;
 }
 
@@ -650,12 +662,12 @@ span{
 }
 
 .modal-btn.student {
-  background-color: #B6F500;
-  color: blue;
+  background-color:rgb(196, 61, 61);
+  color: white;
 }
 
 .modal-btn.admin {
-  background-color: orangered;
+  background-color: rgb(87, 87, 179);  
   color: bisque;
 }
 
@@ -666,8 +678,20 @@ span{
 
 .close-btn {
   background: transparent;
-  border: 2px solid #ccc;
-  color: #333;
+  border: 2px solid var(--fourth-color);
+  color: ;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.close-btn:hover {
+  background: var(--fourth-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--fourth-color);
 }
 
 /* home */
@@ -908,6 +932,122 @@ span{
 }
 
 
+/* /////////////////////////////////////////pricing section ////////////////////////*/
+
+.plans {
+  background-color: var(--snd-bg-color);
+  padding: 6rem 8%;
+  text-align: center;
+}
+
+
+ .plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.box {
+  background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  box-shadow: 0 10px 20px rgba(122, 69, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(122, 69, 255, 0.25);
+  border: 1px solid var(--main-color);
+}
+
+.box .badge {
+  position: absolute;
+  top: -12px;
+  right: -40px;
+  background: var(--third-color);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.box h3 {
+  font-size: 2.8rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.box h2 span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--fourth-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.box ul {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.box ul li {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box ul li i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.box a {
+    
+  display: inline-block;
+  margin-top: auto;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fourth-color);
+  background-color: var(--snd-bg-color);
+  border-radius: 1rem;
+  border-bottom:2px solid #5d6c83;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.box a i {
+  margin-left: 8px;
+  vertical-align: middle;
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.box a:hover {
+  background: var(--third-color);
+  color: #fff;
+  box-shadow: 0 0 12px var(--third-color);
+}
+
+
 /*  Review Section  */
 .review {
   padding: 80px 20px;
@@ -974,4 +1114,160 @@ span{
   margin-top: 10px;
   color: #ccc;
 }
+
+/* ------------------------------------------------------------------Responsive Design-------------------------------------- */
+
+@media (max-width: 1200px) {
+    .html{
+       font-size: 55%;
+    }
+    
+}
+@media (max-width: 991px) {
+   #menuIcon{
+       display: block;
+   }
+   .navbar{
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       left: 0;
+       width: 255px;
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+        background: var(--bg-color);
+       transition: all 0.5s ease-in-out;
+       /* align-items: flex-start; */
+   }
+   .navbar a{
+    display: block;
+    padding: 17px;
+    font-size: 22px;
+     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+   }
+   .navbar.active{
+       right: 0;
+   }
+   header{
+       padding: 2rem 9%;
+   }
+   section{
+       padding: 10rem 5% ;
+   }
+   .services{
+    padding: 7rem;
+   }
+    .services-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .about-content {
+    width: 90%;
+    padding: 4rem 2rem;
+  }
+
+  .about-feature {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .about-feature h4 {
+    font-size: 1.6rem;
+  }
+
+  .about-feature p {
+    font-size: 1.4rem;
+  }
+
+  .plans-container {
+    grid-template-columns: 1fr 1fr;
+  }
+   .about-content h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 5rem;
+   }
+   .review .wrapper{
+      grid-template-columns: repeat(1.1fr);
+   }
+   .footer{
+       padding: 40px 0;
+   }
+}
+
+@media (max-width: 786px) {
+    .home{
+        flex-direction: column;
+         gap: 4rem;
+         text-align: center;
+    }
+    .home-content h3{
+        font-size: 5rem;
+       
+    }
+    .home-content h1{
+        font-size: 4.5rem;
+       
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+       width: 70vw;
+        margin-top: 2rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about-content{
+       text-align: center;
+    }
+    .about-content h2{
+       text-align: center;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    
+}
+@media (max-width: 617px) {
+   
+    .home-img img{
+        width: 80vw;
+        margin-top: 8 rem;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 450px) {
+   html{
+    font-size: 50%;
+   }
+}
+
+
+/* Review Section Code */
+
+.review {
+    background: var(--bg-color);
+}
+
+.review-box {
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
 
