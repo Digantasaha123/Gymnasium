@@ -118,7 +118,7 @@ span{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 00vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.699);
   display: none;
@@ -134,7 +134,7 @@ span{
   border-radius: 12px;
   box-shadow: 15px 15px 30px rgba(220, 20, 60, 0.747);
   text-align: center;
-  min-width: 300px;
+  min-width: 600px;
   max-width: 90%;
 }
 
@@ -165,7 +165,7 @@ span{
 }
 
 .modal-btn.admin {
-  background-color: orangered;
+  background-color: rgb(59, 27, 133);
   color: bisque;
 }
 
@@ -175,9 +175,21 @@ span{
 }
 
 .close-btn {
-  background: transparent;
-  border: 2px solid #ccc;
-  color: #333;
+  background: #b8f500b0;
+  color: white;
+  border: 2px solid var(--fourth-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.close-btn:hover {
+  background: var(--fourth-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--fourth-color);
 }
 
 /* home */
@@ -619,7 +631,7 @@ span{
 
 /* Modal box centered on screen */
 .modal-content {
-  background: rgba(255, 255, 255, 0.937);
+  background: rgba(122, 116, 116, 0.506);
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 15px 15px 30px rgba(220, 20, 60, 0.747);
@@ -631,7 +643,7 @@ span{
 /* Modal heading */
 .modal-content h2 {
   margin-bottom: 20px;
-  color: blueviolet;
+  color: whitesmoke;
   font-size: 24px;
 }
 
@@ -650,12 +662,12 @@ span{
 }
 
 .modal-btn.student {
-  background-color: #B6F500;
-  color: blue;
+  background-color:rgb(196, 61, 61);
+  color: white;
 }
 
 .modal-btn.admin {
-  background-color: orangered;
+  background-color: rgb(87, 87, 179);  
   color: bisque;
 }
 
@@ -666,8 +678,20 @@ span{
 
 .close-btn {
   background: transparent;
-  border: 2px solid #ccc;
-  color: #333;
+  border: 2px solid var(--fourth-color);
+  color: ;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.close-btn:hover {
+  background: var(--fourth-color);
+  color: var(--bg-color);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--fourth-color);
 }
 
 /* home */
