@@ -679,7 +679,7 @@ span{
 .close-btn {
   background: transparent;
   border: 2px solid var(--fourth-color);
-  color: ;
+  color: white;
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 14px;
@@ -1138,7 +1138,7 @@ span{
        flex-direction: column;
         background: var(--bg-color);
        transition: all 0.5s ease-in-out;
-       /* align-items: flex-start; */
+       align-items: flex-start;
    }
    .navbar a{
     display: block;
@@ -1264,10 +1264,119 @@ span{
 }
 
 .review-box {
-   background-size: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+
+  .review .heading {
+     margin-bottom: 5rem;
+  }
+
+  .review-box img {
+     width: 15rem;
+     border-radius: 50%;
+     border: 3px solid var(--main-color);
+  }
+
+  .wrapper {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 3rem;
+  }
+
+  .review-item {
+     min-height: 450px;
+     min-width: 350px;
+     background: var(--snd-bg-color);
+     border: 3px solid rgba(238, 238, 238, 0.3);
+     border-radius: 2rem;
+     margin: 0 2rem;
+     padding: 30px 60px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1.5rem;
+     color: #fff;
+     transition: 0.5s ease-in-out;      
+  }
+
+  .review-item:hover {
+     border: 3px solid var(--main-color);
+     transform: translate(-5px) scale(1.05);
+  }
+
+  .review-item h2 {
+     font-size: 2.8rem;
+  }
+
+  .review-item p {
+     font-size: 1.5rem;
+     line-height: 1.3;
+     text-align: center;
+  }
+     
+  #Star {
+     color: gold;
+     font-size: 2.5rem;
+}
+
+/* Footer Section Code */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--snd-bg-color);
+}
+
+.footer social {
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px); 
+    background: var(--main-color);
+    color: #131313;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);   
+}
+
+/*ScrollBar Design*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-website-scollbar-thumb {
+    background: var(--main-color);
+    border-radius: 50px;
+}
+
 
