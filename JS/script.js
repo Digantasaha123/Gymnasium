@@ -1,4 +1,4 @@
-
+// Hamburger menu
 let menu = document.querySelector('#menuIcon');
 let navbar = document.querySelector('.nav');
 
@@ -41,6 +41,40 @@ const typed = new Typed('.multiple-text', {
       closeModal();
     }
   });
+
+
+// star click event
+  const reviewItems = document.querySelectorAll('.reviewItem');
+
+  reviewItems.forEach(item => {
+    const stars = item.querySelectorAll('.star');
+
+    stars.forEach((star, index) => {
+      if (index < 3) {
+        star.classList.remove('bx-star');
+        star.classList.add('bxs-star');
+        star.style.color = '#B6F500';
+      }
+    });
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const isFilled = star.classList.contains('bxs-star');
+
+        if (isFilled) {
+          star.classList.remove('bxs-star');
+          star.classList.add('bx-star');
+          star.style.color = '';
+        } 
+        else {
+          star.classList.remove('bx-star');
+          star.classList.add('bxs-star');
+          star.style.color = '#B6F500';
+        }
+      });
+    });
+  });
+
 
 
 
