@@ -457,14 +457,15 @@ span{
   grid-template-columns: repeat(3, 1fr);
   gap: 4px; 
   justify-items: center;
-  align-items: start;
+  align-items: center;
 }
 
-.reviewItem {
+.reviewItem{
   background: var(--snd-bg-color);
   border-radius: 1.5rem;
   padding: 3rem 2rem;
   max-width: 320px;
+  box-shadow: 0px 8px 25px rgba(152, 13, 239, 0.411);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
