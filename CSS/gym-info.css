@@ -40,7 +40,7 @@
 
 .info-grid {
     display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+
     justify-content: space-around;
     gap: 3rem;
 }
@@ -118,4 +118,8 @@
 .feature-item i {
     font-size: 2rem;
     color: var(--fourth-color);
+}
+.feature-container{
+    display: flex;
+    justify-content: center;
 }
