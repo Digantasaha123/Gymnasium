@@ -1,6 +1,5 @@
 <?php
 include 'connect.php';
-// We will create 'check_admin.php' next. This line will protect the page.
 include 'check_admin.php';
 ?>
 <!DOCTYPE html>
@@ -23,7 +22,7 @@ include 'check_admin.php';
     </header>
 
     <section class="dashboard-container">
-        <h2 class="heading">Admin <span>Dashboard</span></h2>
+        <h2 class="heading">Admin<span>Dashboard</span></h2>
         <h3 class="welcome-message">Welcome, <?php echo htmlspecialchars($currentAdmin['username']); ?>!</h3>
 
         <div class="info-table">
