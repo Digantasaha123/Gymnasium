@@ -18,7 +18,7 @@ if (mysqli_num_rows($run) > 0) {
         mysqli_query($con, $update_query);
 
         setcookie("auth_token", $token, time() + 86400, "/");
-        header("location: index.html");
+       header("location: admin_dashboard.php");
     } else {
         echo "Invalid credentials.";
     }

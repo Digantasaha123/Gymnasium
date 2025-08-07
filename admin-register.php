@@ -12,8 +12,8 @@ $query = "INSERT INTO admins (username, email, role, password)
 $run = mysqli_query($con, $query);
 
 if (!$run) {
-    echo "Admin registration failed: " . mysqli_error($con);
+    echo "Admin registration failed: " ;
 } else {
-    header("location: admin-login.html?status=success");
+    header("location: admin-login.html");
 }
 ?>
