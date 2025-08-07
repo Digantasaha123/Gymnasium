@@ -1,6 +1,6 @@
 <?php
-include 'check_login.php';
 include 'connect.php'; 
+include 'check-member.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +24,9 @@ include 'connect.php';
     <section class="dashboard-container">
         <h2 class="heading">Member <span>Dashboard</span></h2>
         <h3 class="welcome-message">
-            Welcome back, <?php echo htmlspecialchars($currentUser['username']); ?>!
+            Welcome back, <?php echo htmlspecialchars($currentUser ['username']); ?>!
         </h3>
+
 
         <div class="dashboard-grid">
             <div class="dashboard-widget">
@@ -33,13 +34,14 @@ include 'connect.php';
                 <div class="trainer-list">
                     <?php
                     
-                    $query = "SELECT username, role, avatar FROM admins WHERE role LIKE '%trainer%'";
+                    $query = "SELECT username, role FROM admins WHERE role LIKE '%trainer%'";
+
                     $run = mysqli_query($con, $query);
                     if (mysqli_num_rows($run) > 0) {
                         while ($row = mysqli_fetch_assoc($run)) {
                     ?>
                         <div class="trainer-card">
-                            <img src="assets/images/<?php echo $row['avatar']; ?>" alt="Trainer">
+                            <!-- <img src="assets/images/<?php echo $row['avatar']; ?>" alt="Trainer"> -->
                             <div class="trainer-info">
                                 <strong><?php echo htmlspecialchars($row['username']); ?></strong>
                                 <span><?php echo htmlspecialchars($row['role']); ?></span>

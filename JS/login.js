@@ -21,7 +21,7 @@ registerForm.addEventListener('submit', function (e) {
 
   if (username.length < 4 || /\d/.test(username)) {
     alert("Username must be at least 4 letters and contain no numbers.");
-    e.preventDefault(); // Stop submission if validation fails
+    e.preventDefault(); 
     return;
   }
 
@@ -43,3 +43,17 @@ registerForm.addEventListener('submit', function (e) {
     return;
   }
 });
+
+function togglePassword(inputId, icon) {
+            const passwordInput = document.getElementById(inputId);
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.replace('bx-lock-alt', 'bx-lock-open-alt');
+                icon.classList.replace('bx-lock', 'bx-lock-open-alt');
+                 
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.replace('bx-lock-open-alt', 'bx-lock');
+            }
+        }

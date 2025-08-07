@@ -11,7 +11,7 @@
   <div class="container active">
 
           <div class="formBox login">
-      <form action="login.php" method="POST">
+      <form action="member-login.php" method="POST">
         <h1>Login</h1>
         <div class="inputBox">
           <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
@@ -19,7 +19,7 @@
         </div>
         <div class="inputBox">
           <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
-          <i class='bx bx-lock-alt' ></i>
+          <i class='bx bx-lock-alt 'onclick="togglePassword('loginPassword', this)" ></i>
         </div>
         <div class="forgotLink">
           <a href="#">Forgot Password?</a>
@@ -36,7 +36,7 @@
 
 
           <div class="formBox Register">
-       <form action="register.php" method="POST">
+       <form action="member-register.php" method="POST">
         <h1>Registration</h1>
         <div class="inputBox">
           <input type="text" id="registerUsername" name="registerUsername" placeholder="Username" required>
@@ -48,12 +48,12 @@
         </div>
         <div class="inputBox">
            <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required>
-          <i class='bx bx-lock-alt' ></i>
+          <i class='bx bx-lock-alt'onclick="togglePassword('registerPassword', this)" ></i>
         </div>
         <div class="inputBox">
            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-      <i class='bx bx-lock'></i>
-    </div>
+           <i class='bx bx-lock' onclick="togglePassword('confirmPassword', this)"></i>
+        </div>
           <button type="submit" class="btn">Register</button>
           <p>or register with social platforms</p>
           <div class="SocialIcons">

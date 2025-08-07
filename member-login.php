@@ -10,7 +10,7 @@ $run = mysqli_query($con, $query);
 if (mysqli_num_rows($run) > 0) {
     $user = mysqli_fetch_assoc($run);
 
-    if ($password == $user['password']) {
+   if (password_verify($password, $user['password'])) {
         $token = bin2hex(random_bytes(32));
         $userId = $user['id'];
 
