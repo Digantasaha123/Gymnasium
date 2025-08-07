@@ -48,12 +48,12 @@
         </div>
         <div class="inputBox">
            <input type="password" id="registerPassword" name="registerPassword" placeholder="Password" required>
-          <i class='bx bx-lock-alt' ></i>
+          <i class='bx bx-lock-alt'onclick="togglePassword('registerPassword', this)" ></i>
         </div>
         <div class="inputBox">
            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-      <i class='bx bx-lock'></i>
-    </div>
+           <i class='bx bx-lock' onclick="togglePassword('confirmPassword', this)"></i>
+        </div>
           <button type="submit" class="btn">Register</button>
           <p>or register with social platforms</p>
           <div class="SocialIcons">

@@ -43,3 +43,17 @@ registerForm.addEventListener('submit', function (e) {
     return;
   }
 });
+
+function togglePassword(inputId, icon) {
+            const passwordInput = document.getElementById(inputId);
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.replace('bx-lock-alt', 'bx-show');
+                icon.classList.replace('bx-lock', 'bx-show');
+                 
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.replace('bx-show', 'bx-lock');
+            }
+        }
