@@ -1,6 +1,6 @@
 <?php
 include 'connect.php';
-include 'check_admin.php';
+include 'check-admin.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
