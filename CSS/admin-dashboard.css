@@ -51,3 +51,9 @@ th {
 tbody tr:hover {
     background-color: #252525;
 }
+.table-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
