@@ -10,17 +10,16 @@
 <body>
   <div class="container active">
 
-          <!-- Login -->
-    <div class="formBox login">
-      <form action="">
+          <div class="formBox login">
+      <form action="admin-login.php" method="POST" id="adminLoginForm">
         <h1>Admin Login</h1>
         <div class="inputBox">
-          <input type="text" id="adminloginUsername" placeholder="Admin Username" required>
+          <input type="text" id="adminloginUsername" name="adminloginUsername" placeholder="Admin Username" required>
           <i class='bx bx-user' ></i>
         </div>
         <div class="inputBox">
-          <input type="password" id="adminloginPassword" placeholder="Admin Password" required>
-          <i class='bx bx-lock-alt' ></i>
+          <input type="password" id="adminloginPassword" name="adminloginPassword" placeholder="Admin Password" required>
+          <i class='bx bx-lock-alt toggle-password' ></i>
         </div>
         <div class="forgotLink">
           <a href="#">Forgot Password?</a>
@@ -37,25 +36,23 @@
     </div>
 
 
-          <!-- Register -->
-    <div class="formBox Register">
-      <form action="">
+          <div class="formBox Register">
+      <form action="admin-register.php" method="POST" id="adminRegisterForm">
         <h1>Registration</h1>
         <div class="inputBox">
-          <input type="text" id="adminRegisterUsername" placeholder="Username" required>
+          <input type="text" id="adminRegisterUsername" name="adminRegisterUsername" placeholder="Username" required>
           <i class='bx bx-user' ></i>
         </div>
 
         <div class="inputBox">
-          <input type="Email" id="AdminRegisterEmail" placeholder="Email" required>
+          <input type="Email" id="adminRegisterEmail" name="AdminRegisterEmail" placeholder="Email" required>
           <i class='bx bx-envelope'></i>
         </div>
 
         <div class="inputBox">
-          <select id="adminRole" required>
+          <select id="adminRole" name="adminRole" required>
             <option value="" disabled selected>Select Role</option>
             <option value="trainer">Trainer</option>
-          
             <option value="senior-trainer">Senior Trainer</option>
             <option value="co-trainer">Co-Trainer</option>
           </select>
@@ -63,8 +60,8 @@
         </div>
 
         <div class="inputBox">
-          <input type="password" id="adminRegisterPassword" placeholder="Password" required>
-          <i class='bx bx-lock-alt' ></i>
+          <input type="password" id="adminRegisterPassword" name="adminRegisterPassword" placeholder="Password" required>
+          <i class='bx bx-lock-alt toggle-password' ></i>
         </div>
 
           <button type="submit" class="btn">Register</button>
@@ -93,6 +90,6 @@
     </div>
   </div>
 
-  <script src="JS/login.js"></script>
+  <script src="JS/admin-validation.js"></script>
 </body>
 </html>

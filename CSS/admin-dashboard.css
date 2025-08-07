@@ -1,0 +1,53 @@
+.dashboard-container {
+    padding: 12rem 8% 5rem;
+}
+
+.welcome-message {
+    font-size: 2rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.info-table {
+    background-color: var(--snd-bg-color);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border: 1px solid #222;
+}
+
+.info-table h4 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+thead {
+    background-color: #2a2a2e;
+}
+
+th, td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    color: var(--fourth-color);
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #252525;
+}
