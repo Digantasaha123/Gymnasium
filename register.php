@@ -3,7 +3,7 @@ include 'connect.php';
 
 $username = mysqli_real_escape_string($con, $_POST['registerUsername']);
 $email = mysqli_real_escape_string($con, $_POST['registerEmail']);
-$password = mysqli_real_escape_string($con, $_POST['registerPassword']); 
+$password = mysqli_real_escape_string($con, $_POST['registerPassword']);
 
 $query = "INSERT INTO users (username, email, password)
           VALUES ('$username', '$email', '$password')";

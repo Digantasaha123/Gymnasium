@@ -17,9 +17,8 @@ if (mysqli_num_rows($run) > 0) {
         $update_query = "UPDATE users SET auth_token = '$token' WHERE id = $userId";
         mysqli_query($con, $update_query);
 
-
         setcookie("auth_token", $token, time() + 86400, "/");
-        header("location: index.html");
+        header("location: member_dashboard.php");
     } else {
         echo "Login failed: Invalid username or password.";
     }
