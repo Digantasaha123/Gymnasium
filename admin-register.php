@@ -1,4 +1,5 @@
 <?php
+
 include 'connect.php';
 
 $username = mysqli_real_escape_string($con, $_POST['adminRegisterUsername']);
@@ -14,6 +15,7 @@ $run = mysqli_query($con, $query);
 if (!$run) {
     echo "Admin registration failed: " ;
 } else {
-    header("location: admin-login.html");
+    // alert("Registration Successfull");
+    header("location: admin-login.html?status=success");
 }
 ?>
