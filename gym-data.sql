@@ -16,3 +16,19 @@ CREATE TABLE admins (
     auth_token VARCHAR(255) NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+INSERT INTO `admins` (`username`, `email`, `role`, `password`) VALUES
+('Kyojuro Rengoku', 'rengoku@hashira.com', 'Senior Trainer', 'flamebreathing'),
+('Giyu Tomioka', 'giyu@hashira.com', 'Trainer', 'waterbreathing'),
+('Tengen Uzui', 'tengen@hashira.com', 'Trainer', 'soundbreathing'),
+('Shinobu Kocho', 'shinobu@hashira.com', 'Trainer', 'insectbreathing'),
+('Gyomei Himejima', 'gyomei@hashira.com', 'Senior Trainer', 'stonebreathing');
+
+
+INSERT INTO `users` (`username`, `email`, `password`) VALUES
+('Kokushibo', 'kokushibo@uppermoon.com', 'moonbreathing'),
+('Doma', 'doma@uppermoon.com', 'icepowers'),
+('Akaza', 'akaza@uppermoon.com', 'destructivedeath'),
+('Hantengu', 'hantengu@uppermoon.com', 'emotionmanifestation'),
+('Gyokko', 'gyokko@uppermoon.com', 'porcelainvases');
