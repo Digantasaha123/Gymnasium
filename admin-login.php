@@ -1,5 +1,6 @@
 <?php
 include 'connect.php';
+include 'check-admin.php';
 
 $username = mysqli_real_escape_string($con, $_POST['adminloginUsername']);
 $password = mysqli_real_escape_string($con, $_POST['adminloginPassword']);
